@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Sección de Ejercicios de Primaria -->
+    <section id="niveles" class="ejercicios">
+        <h2>Ejercicios de Primaria</h2>
+        <p>Completa la siguiente secuencia:</p>
+        <div id="ejercicio-primaria">
+            <p>¿Qué número sigue en la secuencia 2, 4, 6, ...?</p>
+            <input type="number" id="respuesta-primaria" placeholder="Tu respuesta">
+            <button onclick="verificarRespuestaPrimaria()">Verificar</button>
+            <p id="feedback-primaria"></p>
+        </div>
+    </section>
+
+    <!-- Calculadora de Edad de Mascotas -->
+    <section id="calculadora-edad-mascotas">
+        <h1>Calculadora de Edad de Mascotas</h1>
+        <p>Ingresa la edad de tu mascota en años humanos:</p>
+        <input type="number" id="edadHumana" min="1" placeholder="Edad en años humanos">
+        <button onclick="calcularEdadMascota()">Calcular</button>
+        <p id="resultado"></p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Plataforma de Programación. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function calcularEdadMascota() {
+            let edadHumana = document.getElementById("edadHumana").value;
+            let edadMascota = edadHumana * 7;  // Supongamos que 1 año humano equivale a 7 años de mascota
+            document.getElementById("resultado").textContent = 
+                "Tu mascota tiene aproximadamente " + edadMascota + " años de mascota.";
+        }
+
+        function verificarRespuestaPrimaria() {
+            let respuesta = document.getElementById("respuesta-primaria").value;
+            let feedback = document.getElementById("feedback-primaria");
+            if (respuesta == 8) {
+                feedback.textContent = "¡Correcto! El siguiente número en la secuencia es 8.";
+                feedback.style.color = "green";
+            } else {
+                feedback.textContent = "Incorrecto. Inténtalo de nuevo.";
+                feedback.style.color = "red";
+            }
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica y Más Herramientas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="calculadora">
+            <h2>Calculadora Básica</h2>
+            <input type="number" id="num1" placeholder="Primer número">
+            <input type="number" id="num2" placeholder="Segundo número">
+            <select id="operation">
+                <option value="sum">Suma</option>
+                <option value="subtraction">Resta</option>
+                <option value="multiplication">Multiplicación</option>
+                <option value="division">División</option>
+            </select>
+            <button onclick="calculate()">Calcular</button>
+            <p id="result">Resultado: </p>
+        </section>
+
+        <section class="juego-adivinanza">
+            <h2>Juego de Adivinanza</h2>
+            <p>Intenta adivinar el número (entre 1 y 10):</p>
+            <input type="number" id="guess" placeholder="Tu adivinanza">
+            <button onclick="checkGuess()">Adivinar</button>
+            <p id="feedback"></p>
+        </section>
+
+        <section class="conversor-temperatura">
+            <h2>Conversor de Temperatura</h2>
+            <input type="number" id="celsius" placeholder="Grados Celsius">
+            <button onclick="convertTemperature()">Convertir a Fahrenheit</button>
+            <p id="result2">Resultado: </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Plataforma de Programación. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="js/main copy.js"></script>
+</body>
+</html>

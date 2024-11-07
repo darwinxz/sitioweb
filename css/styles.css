@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/img3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  color: #f9fafc;
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.menu .navbar ul li {
+  display: inline-block;
+}
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #fffdfc;
+  font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+  color: #ce967b;
+}
+
+.header-content {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.header-content h1 {
+  font-size: 50px;
+  line-height: 1.2;
+  color: #f9fafc;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.header-content p {
+  font-size: 16px;
+  color: #c5c5c5;
+  margin-bottom: 20px;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 11px 35px;
+  background-color: #ce967b;
+  color: #f9fafc;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-1:hover {
+  background-color: #f07866;
+}
+
+/* Sección de Ejercicios */
+.Ejercicios {
+  padding: 100px 0;
+  background-color: #e1e2e6;
+  text-align: center;
+}
+
+.Ejercicios-content h2 {
+  font-size: 55px;
+  color: #323337;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.txt-p {
+  font-size: 16px;
+  color: #414247;
+  margin-bottom: 35px;
+}
+
+.Ejercicios-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.Ejercicios-1 {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+}
+
+.Ejercicios-1 img {
+  width: 100%;
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.Ejercicios-1 h3 {
+  color: #323337;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.Ejercicios-1 p {
+  font-size: 16px;
+  color: #414247;
+  margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+  padding: 50px;
+  background-color: #000000;
+  color: #c5c5c5;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .link h3 {
+  font-size: 18px;
+  color: #f9fafc;
+  margin-bottom: 15px;
+}
+
+.footer .link p {
+  font-size: 16px;
+  color: #c5c5c5;
+}
+/* Sección de Contacto */
+.contacto {
+  padding: 100px 0;
+  background-color: #e1e2e6;
+  text-align: center;
+}
+.contacto-content h2 {
+  font-size: 55px;
+  color: #323337;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.contact-form textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+/* Estilos del Pie de Página */
+.footer {
+  padding: 100px;
+  background-color: #000000;
+  color: #c5c5c5;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+/* Sección Sobre Nosotros */
+.sobre-nosotros {
+  padding: 80px 0;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+}
+
+.sobre-nosotros .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sobre-nosotros .container .imagen {
+  flex: 1 1 300px;
+  max-width: 300px;
+}
+
+.sobre-nosotros .container .imagen img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.sobre-nosotros .container .contenido {
+  flex: 2 1 500px;
+  text-align: left;
+}
+
+.sobre-nosotros .contenido h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.sobre-nosotros .contenido p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.sobre-nosotros .contenido .btn-2 {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #ce967b;
+  color: #f9fafc;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.sobre-nosotros .contenido .btn-2:hover {
+  background-color: #b57b66;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contenedor General */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Sección Ejercicios */
+#niveles {
+  padding: 60px 20px;
+  background-color: #e1e2e6;
+  text-align: center;
+}
+
+#niveles h2 {
+  font-size: 2.5rem;
+  color: #323337;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#niveles p {
+  font-size: 1rem;
+  color: #414247;
+  margin-bottom: 20px;
+}
+
+#ejercicio-primaria {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#ejercicio-primaria p {
+  font-size: 1rem;
+  color: #414247;
+  margin-bottom: 10px;
+}
+
+#respuesta-primaria {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#feedback-primaria {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ce967b;
+  color: #f9fafc;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b57b66;
+}
+
+/* Calculadora de Edad de Mascotas */
+#calculadora-edad-mascotas {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f4f4f9;
+}
+
+#calculadora-edad-mascotas h1 {
+  font-size: 2.5rem;
+  color: #323337;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#calculadora-edad-mascotas p {
+  font-size: 1rem;
+  color: #414247;
+  margin-bottom: 20px;
+}
+
+#edadHumana {
+  padding: 10px;
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+#resultado {
+  font-size: 1rem;
+  color: #414247;
+  margin-top: 10px;
+}
+
+/* Sección Sobre Nosotros */
+.sobre-nosotros {
+  padding: 80px 20px;
+  background-color: #f4f4f9;
+  color: #333;
+  text-align: center;
+}
+
+.sobre-nosotros .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sobre-nosotros .imagen {
+  flex: 1 1 300px;
+  max-width: 300px;
+}
+
+.sobre-nosotros .imagen img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.sobre-nosotros .contenido {
+  flex: 2 1 500px;
+  text-align: left;
+}
+
+.sobre-nosotros .contenido h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.sobre-nosotros .contenido p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.sobre-nosotros .contenido .btn-2 {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #ce967b;
+  color: #f9fafc;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.sobre-nosotros .contenido .btn-2:hover {
+  background-color: #b57b66;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #323337;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Calculadora Básica */
+.calculadora, .juego-adivinanza, .conversor-temperatura {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+input[type="number"], select {
+  padding: 10px;
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ce967b;
+  color: #f9fafc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #b57b66;
+}
+
+#result, #feedback, #result2 {
+  font-size: 1rem;
+  color: #414247;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  color: #c5c5c5;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 1rem;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #323337;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.ejercicio {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.ejercicio input[type="text"], .ejercicio input[type="number"], .ejercicio select {
+  padding: 10px;
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ce967b;
+  color: #f9fafc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #b57b66;
+}
+
+.error {
+  font-size: 1rem;
+  color: red;
+  margin-top: 10px;
+}
